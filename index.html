@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explorer's Guide | Educational Encyclopedia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated background -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="hero">
+
+        <div class="language-switcher">
+            <button id="languageButton" type="button">
+                العربية 🇪🇬
+            </button>
+        </div>
+
+        <div class="hero-badge" id="heroBadge">
+            🧭 Educational Encyclopedia
+        </div>
+
+        <h1 id="heroTitle">
+            Explorer's Guide
+        </h1>
+
+        <p id="heroSubtitle">
+            Discover. Understand. Explore.
+        </p>
+
+        <p class="hero-description" id="heroDescription">
+            A world of knowledge made simple, interesting, and easy to explore.
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- SEARCH -->
+
+        <section class="search-section">
+
+            <span class="section-label" id="searchLabel">
+                🔎 SEARCH & DISCOVER
+            </span>
+
+            <h2 id="searchTitle">
+                What do you want to learn today?
+            </h2>
+
+            <p id="searchDescription">
+                Search through science, mathematics, history, geography,
+                technology, language, and much more.
+            </p>
+
+            <div class="search-bar">
+
+                <input
+                    type="text"
+                    id="searchBox"
+                    autocomplete="off"
+                    placeholder="Try: Photosynthesis, fractions, gravity..."
+                >
+
+                <button id="searchButton" type="button">
+                    Search 🔍
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTS -->
+
+        <section class="results-section">
+
+            <div class="results-heading">
+
+                <div>
+                    <span class="section-label" id="resultsLabel">
+                        📚 EXPLORE
+                    </span>
+
+                    <h2 id="resultsTitle">
+                        Start exploring
+                    </h2>
+                </div>
+
+                <span id="topicCount" class="topic-count"></span>
+
+            </div>
+
+            <div id="result" class="topic-grid"></div>
+
+        </section>
+        <!-- ================= INTERACTIVE EXPLORER ================= -->
+
+        <section id="interactiveExplorer" class="interactive-explainer">
+
+            <span class="section-label">
+                🧠 INTERACTIVE EXPLORER
+            </span>
+
+            <h2 id="interactiveTitle">
+                Explore a topic interactively
+            </h2>
+
+            <p id="interactiveDescription">
+                Choose a topic above to discover how it works.
+            </p>
+
+            <div id="interactiveContent" class="interactive-display">
+                <div class="interactive-info">
+                    🔍 Search for a topic to begin exploring.
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🧭 Explorer's Guide
+        </div>
+
+        <p id="footerText">
+            Learn something new. Explore something amazing. 🌍
+        </p>
+
+        <span>
+            © 2026 Explorer's Guide
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
