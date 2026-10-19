@@ -1,158 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Explorer's Guide | Educational Encyclopedia</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a36">
+  <meta name="description" content="Explorer's Guide, a bilingual student encyclopedia made for curious minds.">
+  <title>Explorer's Guide | AMS Encyclopedia for Students</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Animated background -->
-    <div class="background-glow glow-one"></div>
-    <div class="background-glow glow-two"></div>
-    <div class="background-glow glow-three"></div>
-
-    <!-- ================= HEADER ================= -->
-
-    <header class="hero">
-
-        <div class="language-switcher">
-            <button id="languageButton" type="button">
-                العربية 🇪🇬
-            </button>
-        </div>
-
-        <div class="hero-badge" id="heroBadge">
-            🧭 Educational Encyclopedia
-        </div>
-
-        <h1 id="heroTitle">
-            Explorer's Guide
-        </h1>
-
-        <p id="heroSubtitle">
-            Discover. Understand. Explore.
-        </p>
-
-        <p class="hero-description" id="heroDescription">
-            A world of knowledge made simple, interesting, and easy to explore.
-        </p>
-
-    </header>
-
-
-    <!-- ================= MAIN ================= -->
-
-    <main>
-
-        <!-- SEARCH -->
-
-        <section class="search-section">
-
-            <span class="section-label" id="searchLabel">
-                🔎 SEARCH & DISCOVER
-            </span>
-
-            <h2 id="searchTitle">
-                What do you want to learn today?
-            </h2>
-
-            <p id="searchDescription">
-                Search through science, mathematics, history, geography,
-                technology, language, and much more.
-            </p>
-
-            <div class="search-bar">
-
-                <input
-                    type="text"
-                    id="searchBox"
-                    autocomplete="off"
-                    placeholder="Try: Photosynthesis, fractions, gravity..."
-                >
-
-                <button id="searchButton" type="button">
-                    Search 🔍
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- RESULTS -->
-
-        <section class="results-section">
-
-            <div class="results-heading">
-
-                <div>
-                    <span class="section-label" id="resultsLabel">
-                        📚 EXPLORE
-                    </span>
-
-                    <h2 id="resultsTitle">
-                        Start exploring
-                    </h2>
-                </div>
-
-                <span id="topicCount" class="topic-count"></span>
-
-            </div>
-
-            <div id="result" class="topic-grid"></div>
-
-        </section>
-        <!-- ================= INTERACTIVE EXPLORER ================= -->
-
-        <section id="interactiveExplorer" class="interactive-explainer">
-
-            <span class="section-label">
-                🧠 INTERACTIVE EXPLORER
-            </span>
-
-            <h2 id="interactiveTitle">
-                Explore a topic interactively
-            </h2>
-
-            <p id="interactiveDescription">
-                Choose a topic above to discover how it works.
-            </p>
-
-            <div id="interactiveContent" class="interactive-display">
-                <div class="interactive-info">
-                    🔍 Search for a topic to begin exploring.
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        <div class="footer-logo">
-            🧭 Explorer's Guide
-        </div>
-
-        <p id="footerText">
-            Learn something new. Explore something amazing. 🌍
-        </p>
-
-        <span>
-            © 2026 Explorer's Guide
-        </span>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Explorer's Guide home"><span class="brand-mark">🧭</span><span><strong>Explorer's Guide</strong><small>AMS Encyclopedia for Students</small></span></a>
+    <div class="header-actions"><span class="offline-pill"><i></i><span data-i18n="offline">Works offline</span></span><button id="languageButton" class="button button-ghost" type="button">العربية 🇪🇬</button></div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span>✦</span> <span data-i18n="heroBadge">A universe of ideas</span></div>
+        <h1><span data-i18n="heroLine1">Curiosity has</span><br><em data-i18n="heroLine2">no borders.</em></h1>
+        <p data-i18n="heroDesc">Explore big ideas, understand the little details, and follow every question somewhere wonderful.</p>
+        <div class="hero-stats"><div><strong id="heroTopicCount">400+</strong><span data-i18n="topicsAvailable">learning topics</span></div><div><strong>EN <b>+</b> AR</strong><span data-i18n="twoLanguages">two languages</span></div><div><strong>∞</strong><span data-i18n="curiosity">curiosity encouraged</span></div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet planet-main">✦</div><div class="planet planet-small">✧</div><div class="orbit-label label-top">IDEAS</div><div class="orbit-label label-bottom">EXPLORE</div><div class="spark spark-one">✳</div><div class="spark spark-two">✦</div></div>
+    </section>
+    <section class="search-panel" aria-labelledby="searchTitle"><div class="section-kicker" data-i18n="discover">DISCOVER SOMETHING NEW</div><h2 id="searchTitle" data-i18n="searchTitle">What are we curious about today?</h2><p data-i18n="searchSub">Search a subject, a question, or a word you want to understand.</p>
+      <form id="searchForm" class="search-form"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchBox" type="search" autocomplete="off" placeholder="Try gravity, fractions, ancient Egypt…" aria-label="Search topics"><button class="button button-primary" type="submit" data-i18n="search">Search <span>↗</span></button></form>
+      <div class="quick-search"><span data-i18n="popular">TRY:</span><button type="button" class="chip" data-query="Solar System">Solar System</button><button type="button" class="chip" data-query="Fractions">Fractions</button><button type="button" class="chip" data-query="Ancient Egypt">Ancient Egypt</button><button type="button" class="chip" data-query="Artificial Intelligence">AI</button></div>
+    </section>
+    <section class="library-section" aria-labelledby="resultsTitle"><div class="library-head"><div><div class="section-kicker" data-i18n="library">THE KNOWLEDGE LIBRARY</div><h2 id="resultsTitle">A good place to begin</h2><p id="resultsSub" data-i18n="librarySub">Choose a trail, or let curiosity pick one.</p></div><div class="library-tools"><button id="randomButton" class="button button-outline" type="button"><span>✧</span> <span data-i18n="surprise">Surprise me</span></button><label class="sr-only" for="categoryFilter" data-i18n="filter">Filter by subject</label><select id="categoryFilter" aria-label="Filter by subject"><option value="all">All subjects</option></select></div></div>
+      <div id="categoryRail" class="category-rail" aria-label="Subject filters"></div><div class="result-meta"><span id="topicCount">Loading topics…</span><span data-i18n="localNote">Core reading is stored on this device.</span></div><div id="result" class="topic-grid" aria-live="polite"></div>
+      <div class="pagination-row"><button id="loadMoreButton" class="button button-outline" type="button" data-i18n="loadMore">Show more topics ↓</button></div>
+    </section>
+    <section class="callout"><div class="callout-icon">💡</div><div><div class="section-kicker" data-i18n="tinyReminder">A LITTLE REMINDER</div><h2 data-i18n="calloutTitle">Every expert started with a question.</h2><p data-i18n="calloutText">Follow the question. The next discovery might be yours.</p></div><span class="callout-star" aria-hidden="true">✦</span></section>
+  </main>
+  <footer><a class="footer-brand" href="#top">🧭 Explorer's Guide</a><p data-i18n="footerText">Made for learners at AMS Benha, and for every curious mind.</p><span>© 2026 · <span data-i18n="footerSmall">Learn boldly. Stay curious.</span></span></footer>
+  <script src="data.js"></script><script src="script.js"></script>
+</body></html>
